@@ -28,7 +28,6 @@ To get started, update the directory paths in the JSON file to match your local 
 
 ### Sample JSON Configuration
 
-```json
 {
     "data_loader": {
         "type": "COWCGANFrcnnDataLoader",
@@ -58,7 +57,7 @@ To get started, update the directory paths in the JSON file to match your local 
 }
 
 
-### Contact Information
+### Contact Information 
 
-If you need any assistance with this code, please feel free to reach out via email at [usman.ahmad_scut@hotmail.com](mailto:usman.ahmad_scut@hotmail.com).
+For any assistance or questions regarding this code, feel free to reach out via email at usman.ahmad_scut@hotmail.com.
 
