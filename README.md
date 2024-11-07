@@ -32,8 +32,8 @@ To get started, update the directory paths in the JSON file to match your local 
     "data_loader": {
         "type": "COWCGANFrcnnDataLoader",
         "args": {
-            "data_dir_GT": "/your/local/path/to/HR_2/",
-            "data_dir_LQ": "/your/local/path/to/LR_2/",
+            "data_dir_GT": "/data2/PhD/test/GAN/DOTA_images/HR_2/",
+            "data_dir_LQ": "/data2/PhD/test/GAN/DOTA_images/LR_2/",
             "batch_size": 1,
             "shuffle": true,
             "validation_split": 0.0,
@@ -41,12 +41,12 @@ To get started, update the directory paths in the JSON file to match your local 
         }
     },
     "path": {
-        "models": "/your/local/path/to/pretrained_models_FPGAN_ESN",
-        "pretrain_model_G": "/your/local/path/to/20000_G1.pth",
-        "pretrain_model_D": "/your/local/path/to/20000_D1.pth",
-        "pretrain_model_FRCNN": "/your/local/path/to/20000_FRCNN1.pth",
-        "data_dir_Valid": "/your/local/path/to/LR_2/",
-        "Test_Result_SR": "/your/local/path/to/Results",
+        "models": "/data2/PhD/test/GAN/saved/pretrained_models_FPGAN_ESN",
+        "pretrain_model_G": "/data2/PhD/test/GAN/saved/pretrained_models_FPGAN_ESN/20000_G1.pth",
+        "pretrain_model_D": "/data2/PhD/test/GAN/saved/pretrained_models_FPGAN_ESN/20000_D1.pth",
+        "pretrain_model_FRCNN": "/data2/PhD/test/GAN/saved/pretrained_models_FPGAN_ESN/20000_FRCNN1.pth",
+        "data_dir_Valid": "//data2/PhD/test/GAN/DOTA_images/LR_2/",
+        "Test_Result_SR": "/data2/PhD/test/GAN/Results",
         "strict_load": false,
         "log": "saved/logs"
     },
