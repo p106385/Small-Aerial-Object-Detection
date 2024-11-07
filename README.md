@@ -22,11 +22,7 @@
 ## Generate High, Low, and Bicubic Resolution Images For  Dataset
 Download pre-made dataset of COWC from [here](https://gdo152.llnl.gov/cowc/download/cowc-m/datasets/DetectionPatches_256x256.tgz) and this script which is available in above scripts_for_datasets
 /scripts_GAN_HR-LR.py  can be used with pre-made dataset to create high/low-resolution and bicubic images. Make sure to copy annotation files (.txt) in the HR, LR and Bic folder.  
-## Configure JSON File
 
-To get started, update the directory paths in the JSON file to match your local user environment. Pretrained weights can be downloaded from [Google Drive here](https://drive.google.com/drive/folders/15xN_TKKTUpQ5EVdZWJ2aZUa4Y-u-Mt0f?usp=sharing).
-
-### Sample JSON Configuration
 
 ## Configure JSON File
 
