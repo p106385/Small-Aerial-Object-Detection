@@ -58,9 +58,7 @@ To get started, update the directory paths in the JSON file to match your local 
         "save_checkpoint_freq": 20000
     }
 }
-
-```json
-### Contact Information 
-
+` ``` `
+ Contact Information 
 For any assistance or questions regarding this code, feel free to reach out via email at usman.ahmad_scut@hotmail.com.
 
