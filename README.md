@@ -25,7 +25,7 @@ Download pre-made dataset of COWC from [here](https://gdo152.llnl.gov/cowc/downl
 ## Configure JSON File
 Please update the JSON file directory to match your local user path. Pretrained weights are conveniently available for download from [here](https://drive.google.com/drive/folders/15xN_TKKTUpQ5EVdZWJ2aZUa4Y-u-Mt0f?usp=sharing)
 
-#Config_GAN.Json_file
+
 
 "data_loader": {
         "type": "COWCGANFrcnnDataLoader",
