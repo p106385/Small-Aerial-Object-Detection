@@ -12,7 +12,7 @@
 ## Testing
 `python test.py -c config_GAN.json`
 ## Dataset Download links
-1. **[DOTA Dataset](link-to-dota-dataset)** - DOTA dataset from here.
+1. **[DOTA Dataset](https://captain-whu.github.io/DOTA/index.html)** - DOTA dataset from here.
 
 2. **[OGST Dataset](link-to-ogst-dataset)** - OGST dataset from here.
 
