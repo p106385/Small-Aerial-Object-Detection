@@ -17,7 +17,6 @@
 2. **[OGST Dataset](link-to-ogst-dataset)** - OGST dataset from here.
 
 3. **[COWC Dataset](https://gdo152.llnl.gov/cowc/download/cowc-m/datasets/)** - COWC dataset from here.
-[Here](https://github.com/LLNL/cowc/tree/master/COWC-M) is a GitHub repo to create custom image patches.
 
 ## Generate High, Low, and Bicubic Resolution Images For  Dataset
 Download pre-made dataset of COWC from [here](https://gdo152.llnl.gov/cowc/download/cowc-m/datasets/DetectionPatches_256x256.tgz) and this script which is available in above scripts_for_datasets
