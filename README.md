@@ -43,31 +43,3 @@ The directory of the following JSON file is needed to be changed according to th
     }
 }
 
-```
-## Paper
-Find the published version on [Remote Sensing](https://www.mdpi.com/2072-4292/12/9/1432).  
-Find the preprints of the related paper on [preprints.org](https://www.preprints.org/manuscript/202003.0313/v1), [arxiv.org](https://arxiv.org/abs/2003.09085) and [researchgate.net](https://www.researchgate.net/publication/340095015_Small-Object_Detection_in_Remote_Sensing_Images_with_End-to-End_Edge-Enhanced_GAN_and_Object_Detector_Network).
-### Abstract
-The detection performance of small objects in remote sensing images has not been satisfactory compared to large objects, especially in low-resolution and noisy images. A generative adversarial network (GAN)-based model called enhanced super-resolution GAN (ESRGAN) showed remarkable image enhancement performance, but reconstructed images usually miss high-frequency edge information. Therefore, object detection performance showed degradation for small objects on recovered noisy and low-resolution remote sensing images. Inspired by the success of edge enhanced GAN (EEGAN) and ESRGAN, we applied a new edge-enhanced super-resolution GAN (EESRGAN) to improve the quality of remote sensing images and used different detector networks in an end-to-end manner where detector loss was backpropagated into the EESRGAN to improve the detection performance. We proposed an architecture with three components: ESRGAN, EEN, and Detection network. We used residual-in-residual dense blocks (RRDB) for both the ESRGAN and EEN, and for the detector network, we used a faster region-based convolutional network (FRCNN) (two-stage detector) and a single-shot multibox detector (SSD) (one stage detector). Extensive experiments on a public (car overhead with context) dataset and another self-assembled (oil and gas storage tank) satellite dataset showed superior performance of our method compared to the standalone state-of-the-art object detectors.
-### Keywords
-object detection; faster region-based convolutional neural network (FRCNN); single-shot multibox detector (SSD); super-resolution; remote sensing imagery; edge enhancement; satellites
-## Related Repository
-Some code segments are based on [ESRGAN](https://github.com/xinntao/BasicSR)
-## Citation
-### BibTex
-`@article{rabbi2020small,`\
-  `title={Small-Object Detection in Remote Sensing Images with End-to-End Edge-Enhanced GAN and Object Detector Network},`\
-  `author={Rabbi, Jakaria and Ray, Nilanjan and Schubert, Matthias and Chowdhury, Subir and Chao, Dennis},`\
-  `journal={Remote Sensing},`\
-  `volume={12},`\
-  `number={9},`\
-  `pages={1432},`\
-  `year={2020}`\
-  `publisher={Multidisciplinary Digital Publishing Institute}`\
-`}` 
-### Chicago
-`Rabbi, Jakaria; Ray, Nilanjan; Schubert, Matthias; Chowdhury, Subir; Chao, Dennis. 2020. "Small-Object Detection in Remote Sensing Images with End-to-End Edge-Enhanced GAN and Object Detector Network." Remote Sens. 12, no. 9: 1432.`  
-## To Do 
-- Refactor and clean the code.
-- Add more command line option for training and testing to run different configuration.
-- Fix bug and write important tests. 
