@@ -16,7 +16,7 @@
 
 2. **[OGST Dataset](link-to-ogst-dataset)** - OGST dataset from here.
 
-3. **[COWC Dataset]([link-to-cowc-dataset](https://gdo152.llnl.gov/cowc/download/cowc-m/datasets/))** - COWC dataset from here.
+3. **[COWC Dataset](https://gdo152.llnl.gov/cowc/download/cowc-m/datasets/)** - COWC dataset from here.
 [Here](https://github.com/LLNL/cowc/tree/master/COWC-M) is a GitHub repo to create custom image patches.
 Download pre-made dataset from [here](https://gdo152.llnl.gov/cowc/download/cowc-m/datasets/DetectionPatches_256x256.tgz) and [this](https://github.com/Jakaria08/EESRGAN/blob/1f93130d8e99166e7bc4d1640329450feec9ff9c/scripts_for_datasets/scripts_GAN_HR-LR.py#L24) script can be used with pre-made dataset to create high/low-resolution and bicubic images. Make sure to copy annotation files (.txt) in the HR, LR and Bic folder.  
 ## Configure JSON File
