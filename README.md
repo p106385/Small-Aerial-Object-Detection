@@ -1,4 +1,4 @@
-# EESRGAN
+# FPGAN+ESN_Model
 ## Model Architecture
 <img src="Detection_Results/overall_pipeline.PNG" width="100%"></img>
 ## Enhancement and Detection
