@@ -28,6 +28,13 @@ To get started, update the directory paths in the JSON file to match your local 
 
 ### Sample JSON Configuration
 
+## Configure JSON File
+
+To get started, update the directory paths in the JSON file to match your local user environment. Pretrained weights can be downloaded from [Google Drive here](https://drive.google.com/drive/folders/15xN_TKKTUpQ5EVdZWJ2aZUa4Y-u-Mt0f?usp=sharing).
+
+### Sample JSON Configuration
+
+```json
 {
     "data_loader": {
         "type": "COWCGANFrcnnDataLoader",
