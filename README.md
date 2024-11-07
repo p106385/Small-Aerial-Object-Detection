@@ -12,12 +12,15 @@
 ## Testing
 `python test.py -c config_GAN.json`
 ## Dataset Download links
+## 1.DOTA Dataset
 1.DOTA dataset from [here.](https://captain-whu.github.io/DOTA/dataset.html)
+## 2.OGST Dataset
 2.OGST dataset from [here.](https://captain-whu.github.io/DOTA/dataset.html)
+## 3.COWC Dataset
 [Here](https://github.com/LLNL/cowc/tree/master/COWC-M) is a GitHub repo to create custom image patches.
 Download pre-made dataset from [here](https://gdo152.llnl.gov/cowc/download/cowc-m/datasets/DetectionPatches_256x256.tgz) and [this](https://github.com/Jakaria08/EESRGAN/blob/1f93130d8e99166e7bc4d1640329450feec9ff9c/scripts_for_datasets/scripts_GAN_HR-LR.py#L24) script can be used with pre-made dataset to create high/low-resolution and bicubic images. Make sure to copy annotation files (.txt) in the HR, LR and Bic folder.  
 ## Configure JSON File
-The directory of the following JSON file is needed to be changed according to the user directory. For details see [config_GAN.json](https://github.com/Jakaria08/EESRGAN/blob/master/config_GAN.json) and pretrained weights are uploaded in [google drive](https://drive.google.com/drive/folders/15xN_TKKTUpQ5EVdZWJ2aZUa4Y-u-Mt0f?usp=sharing)
+The directory of the following JSON file is needed to be changed according to the user directory and pretrained weights are uploaded in [google drive](https://drive.google.com/drive/folders/15xN_TKKTUpQ5EVdZWJ2aZUa4Y-u-Mt0f?usp=sharing)
 ```yaml
 {
     "data_loader": {
