@@ -20,26 +20,36 @@
 [Here](https://github.com/LLNL/cowc/tree/master/COWC-M) is a GitHub repo to create custom image patches.
 
 ## Generate High, Low, and Bicubic Resolution Images For  Dataset
-Download pre-made dataset from [here](https://gdo152.llnl.gov/cowc/download/cowc-m/datasets/DetectionPatches_256x256.tgz) and [this](https://github.com/Jakaria08/EESRGAN/blob/1f93130d8e99166e7bc4d1640329450feec9ff9c/scripts_for_datasets/scripts_GAN_HR-LR.py#L24) script can be used with pre-made dataset to create high/low-resolution and bicubic images. Make sure to copy annotation files (.txt) in the HR, LR and Bic folder.  
+Download pre-made dataset of COWC from [here](https://gdo152.llnl.gov/cowc/download/cowc-m/datasets/DetectionPatches_256x256.tgz) and this script which is available in above scripts_for_datasets
+/scripts_GAN_HR-LR.py  can be used with pre-made dataset to create high/low-resolution and bicubic images. Make sure to copy annotation files (.txt) in the HR, LR and Bic folder.  
 ## Configure JSON File
-The directory of the following JSON file is needed to be changed according to the user directory and pretrained weights are uploaded in [google drive](https://drive.google.com/drive/folders/15xN_TKKTUpQ5EVdZWJ2aZUa4Y-u-Mt0f?usp=sharing)
-```yaml
-{
-    "data_loader": {
+Please update the JSON file directory to match your local user path. Pretrained weights are conveniently available for download from [here](https://drive.google.com/drive/folders/15xN_TKKTUpQ5EVdZWJ2aZUa4Y-u-Mt0f?usp=sharing)
+
+#Config_GAN.Json_file
+
+"data_loader": {
         "type": "COWCGANFrcnnDataLoader",
         "args":{
-            "data_dir_GT": "/Directory for High-Resolution Ground Truth images/",
-            "data_dir_LQ": "/Directory for 4x downsampled Low-Resolution images from the above High-Resolution images/"
+            "data_dir_GT": "/data2/PhD/test/GAN/DOTA_images/HR_2/",
+            "data_dir_LQ": "/data2/PhD/test/GAN/DOTA_images/LR_2/",
+            "batch_size": 1,
+            "shuffle": true,
+            "validation_split": 0.0,
+            "num_workers": 2
         }
     },
 
-    "path": {
-        "models": "saved/save_your_model_in_this_directory/",
-        "pretrain_model_G": "Pretrained_model_path_for_train_test/170000_G.pth",
-        "pretrain_model_D": "Pretrained_model_path_for_train_test/170000_G.pth",
-        "pretrain_model_FRCNN": "Pretrained_model_path_for_train_test/170000_G.pth",
-        "data_dir_Valid": "/Low_resoluton_test_validation_image_directory/"
-        "Test_Result_SR": "Directory_to_store_test_results/"
+   "path": {
+        "models": "/data2/PhD/test/GAN/saved/pretrained_models_FPGAN_ESN",
+        "pretrain_model_G": "/data2/PhD/test/GAN/saved/pretrained_models_FPGAN_ESN/20000_G1.pth",
+        "pretrain_model_D": "/data2/PhD/test/GAN/saved/pretrained_models_FPGAN_ESN/20000_D1.pth",
+        "pretrain_model_FRCNN": "/data2/PhD/test/GAN/saved/pretrained_models_FPGAN_ESN/20000_FRCNN1.pth",
+        "data_dir_Valid": "//data2/PhD/test/GAN/DOTA_images/LR_2/",
+        "Test_Result_SR": "/data2/PhD/test/GAN/Results",
+        "strict_load": false,
+        "log": "saved/logs"
+    },
+    "logger": {
+      "print_freq": 1,
+      "save_checkpoint_freq":20000
     }
-}
-
