@@ -14,7 +14,7 @@
 ## Dataset Download links
 1. **[DOTA Dataset](https://captain-whu.github.io/DOTA/index.html)** - DOTA dataset from here.
 
-2. **[OGST Dataset](link-to-ogst-dataset)** - OGST dataset from here.
+2. **[OGST Dataset](https://data.mendeley.com/datasets/bkxj8z84m9/3)** - OGST dataset from here.
 
 3. **[COWC Dataset](https://gdo152.llnl.gov/cowc/download/cowc-m/datasets/)** - COWC dataset from here.
 
