@@ -1,6 +1,6 @@
 # FPGAN+ESN Model
 ## Model Architecture
-<img src="Detection_Results/P-01.jpg" width="85%"></img>
+<img src="Detection_Results/P-01.jpg" width="90%"></img>
 ## Enhancement and Detection
 |Low Resolution <br/> Image & Detection|Super Resolved <br/> Image & Detection|High Resolution Ground Truth <br/> Image & Bounding Box|
 | --- | --- | --- |
